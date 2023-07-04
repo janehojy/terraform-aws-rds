@@ -69,7 +69,7 @@ resource "aws_db_instance" "education" {
   instance_class         = var.db_instance_class
   allocated_storage      = 5
   engine                 = "postgres"
-  engine_version         = "14.1"
+  engine_version         = "14.8"
   username               = var.db_username
   password               = var.db_password
   db_subnet_group_name   = aws_db_subnet_group.education.name
