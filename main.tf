@@ -66,7 +66,7 @@ resource "random_pet" "random" {
 
 resource "aws_db_instance" "education" {
   identifier             = "${var.db_name}-${random_pet.random.id}"
-  instance_class         = "db.t3.micro"
+  instance_class         = var.db_instance_class
   allocated_storage      = 5
   engine                 = "postgres"
   engine_version         = "14.1"

@@ -10,3 +10,8 @@ variable "db_password" {
   description = "RDS root user password"
   sensitive   = true
 }
+
+variable "db_instance_class" {
+  description = "RDS instance class"
+  default = "db.t3.micro"
+}
