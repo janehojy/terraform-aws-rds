@@ -14,3 +14,7 @@ variable "db_password" {
 variable "db_instance_class" {
   description = "RDS instance class"
 }
+
+variable "region" {
+  description = "AWS region"
+}
